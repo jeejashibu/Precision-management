@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Management Consultants</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/umd/lucide.min.js"></script>
+    <style>
+        :root {
+            --navy: #1a2a3a;
+            --orange: #f38431;
+            --light-grey: #f4f7f9;
+            --white: #ffffff;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--navy);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--orange); }
+
+        .btn-consult {
+            background: var(--orange);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 42, 58, 0.8), rgba(26, 42, 58, 0.8)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 5%;
+            text-align: left;
+        }
+
+        .hero h1 { font-size: 3rem; max-width: 800px; margin-bottom: 1rem; line-height: 1.1; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; opacity: 0.9; }
+
+        .hero-btns { display: flex; gap: 1rem; }
+        .btn-secondary { background: rgba(255,255,255,0.1); border: 1px solid white; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 4px; }
+
+        /* Services Grid */
+        .services { padding: 80px 5%; background: var(--light-grey); text-align: center; }
+        .section-title { margin-bottom: 50px; font-size: 2rem; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--navy);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card i { color: var(--white); margin-bottom: 20px; }
+        .card h3 { font-size: 1.1rem; margin-bottom: 15px; height: 3rem; display: flex; align-items: center; justify-content: center; }
+        .card p { font-size: 0.85rem; opacity: 0.8; margin-bottom: 20px; }
+
+        .btn-learn { color: var(--orange); text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <i data-lucide="shield-check"></i> PRECISION MANAGEMENT
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">INDUSTRIES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <a href="#" class="btn-consult">BOOK A CONSULTATION</a>
+    </nav>
+
+    <header class="hero">
+       <a href="mailto:contact@precisionmngmt.com" class="block min-h-[44px] flex flex-col items-center justify-center"><div class="inline-flex items-center justify-center w-14 h-14 bg-gold/10 rounded-full mb-4 transition-all duration-300 group-hover:bg-gold/20 group-hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-7 w-7 text-gold transition-transform duration-300 group-hover:scale-110"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div><h3 class="text-lg md:text-xl font-serif font-bold text-foreground mb-2">Email</h3><span class="text-muted-foreground transition-colors duration-300 group-hover:text-gold">contact@precisionmanagement.com</span></a>
+    </header>
+
+    
+
+    <script>
+        // Initialize icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
